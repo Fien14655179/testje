@@ -1,0 +1,6 @@
+format: jb-book
+root: home
+chapters:
+  - file: notebook
+  - file: perspectief_1
+  - file: perspectief_2
