@@ -1,0 +1,2207 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>De (on)zichtbare pijlers van welzijn: hoe sociale factoren geluk beïnvloeden &#8212; Jupyter Book Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d545762e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'group29';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="docs/home.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Book Template</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="docs/home.html">
+                    Jupyter Book Tutorial
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="docs/notebook.html">Example Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/group29.html">De (on)zichtbare pijlers van welzijn: hoe sociale factoren geluk beïnvloeden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/perspectief_2.html">Vrijheid, politiek en geluk: hoe culturele factoren ons welzijn beïnvloeden</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/yenchiah/jupyter-book-template/blob/main/docs/group29.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/yenchiah/jupyter-book-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/yenchiah/jupyter-book-template/issues/new?title=Issue%20on%20page%20%2Fgroup29.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/group29.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>De (on)zichtbare pijlers van welzijn: hoe sociale factoren geluk beïnvloeden</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inleiding">Inleiding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-preprocessing">Datasets en Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centril-happiness-score">Centril happiness score</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mental-health-mental-disorder-dataset">Mental Health (Mental disorder dataset)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#herkomtst-dataset">Herkomtst dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruikte-variabelen">Gebruikte variabelen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#opgschonen-dataset">Opgschonen dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-samenvoegen">Datasets samenvoegen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-head">Dataset head</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alcohol-consumptie-per-persoon">Alcohol consumptie per persoon</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#herkomst-dataset">Herkomst dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruikte-variabalen">Gebruikte variabalen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#opschonen-dataset">Opschonen dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Datasets samenvoegen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectieven-en-argumenten">Perspectieven en Argumenten</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perpectief-1">Perpectief 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-1">Argument 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-2">Argument 2</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-2">Perspectief 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Argument 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Argument 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mentale-stoornissen-en-alcohol">Mentale stoornissen en Alcohol</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#geluk-en-alcohol">Geluk en alcohol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#samenvatting-optioneel">Samenvatting (optioneel)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verwerkte-feedback">Verwerkte Feedback</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werk-verdeling">Werk Verdeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-1-inkomensongelijkheid">Perspectief 1: Inkomensongelijkheid</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruikte-datasets">Gebruikte datasets</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-stappen">Preprocessing stappen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-1-ongelijkheid-vergroot-status-stress-en-sociale-vergelijking">Argument 1: Ongelijkheid vergroot status, stress en sociale vergelijking.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-2-gedeelde-middelen-nemen-af-waardoor-sociale-samenhang-verzwakt">Argument 2: Gedeelde middelen nemen af, waardoor sociale samenhang verzwakt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusie">Conclusie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-2-politiek">Perspectief 2: politiek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Gebruikte datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#world-values-survey-2022">1. <strong>World Values Survey (2022)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gallup-world-poll-our-world-in-data-2022">2. <strong>Gallup World Poll / Our World in Data (2022)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#onderzoeksvraag-en-doel">Onderzoeksvraag en Doel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-1-inladen-van-de-dataset-over-politiek-belang">Stap 1: Inladen van de dataset over politiek belang</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resultaat">Resultaat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-2-inladen-van-de-dataset-over-geluk">Stap 2: Inladen van de dataset over geluk</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Resultaat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-3-mergen-van-beide-datasets">Stap 3: Mergen van beide datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Resultaat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-4-correlatie-berekenen">Stap 4: Correlatie berekenen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-1-hoge-politieke-betrokkenheid-weerspiegelt-gevoel-van-urgentie-in-crisissamenlevingen">Argument 1: Hoge politieke betrokkenheid weerspiegelt gevoel van urgentie in crisissamenlevingen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onderbouwing-uit-de-data">Onderbouwing uit de data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretatie">Interpretatie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Resultaat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-5-visualisatie-van-de-relatie">Stap 5: Visualisatie van de relatie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Conclusie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-3-drugs-gebruik">perspectief 3: drugs gebruik</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="de-on-zichtbare-pijlers-van-welzijn-hoe-sociale-factoren-geluk-beinvloeden">
+<h1>De (on)zichtbare pijlers van welzijn: hoe sociale factoren geluk beïnvloeden<a class="headerlink" href="#de-on-zichtbare-pijlers-van-welzijn-hoe-sociale-factoren-geluk-beinvloeden" title="Link to this heading">#</a></h1>
+<section id="inleiding">
+<h2>Inleiding<a class="headerlink" href="#inleiding" title="Link to this heading">#</a></h2>
+<p>Wat maakt mensen in een land gelukkig? In dit project onderzoeken we hoe maatschappelijke structuren en omstandigheden het subjectieve welzijn van burgers beïnvloeden, gemeten aan de hand van de Cantril ladder score. Deze score vraagt mensen om hun leven te beoordelen op een schaal van nul (het slechtst mogelijke leven) tot tien (het best mogelijke leven). Door deze gegevens te combineren met sociaal-economische indicatoren kunnen we maatschappelijke verbanden blootleggen die vaak verborgen blijven.</p>
+<p>We richten ons op vier centrale perspectieven die volgens onderzoek en publieke discussie een belangrijke rol spelen bij het ervaren van welzijn: inkomensongelijkheid, drugs gebruik, het sociale vangnet en arbeidszekerheid. Elk van deze perspectieven biedt een unieke invalshoek op hoe structurele factoren de mentale gezondheid en het geluk van bevolkingen beïnvloeden.</p>
+<p>Het eerste perspectief richt zich op inkomensongelijkheid. We onderzoeken in hoeverre grote inkomensverschillen statusstress, sociale fragmentatie en uiteindelijk lager welzijn veroorzaken.
+Vervolgens kijken we naar drugs gebruik, met name alcoholconsumptie, en hoe dit zowel een oorzaak als gevolg kan zijn van lagere welzijnsniveaus.
+Het derde perspectief bestudeert de kracht van het sociale vangnet: bieden maatschappelijke voorzieningen bescherming tegen ontevredenheid en mentale belasting?
+Tot slot analyseren we de rol van arbeidszekerheid, en of een stabiele werksituatie bijdraagt aan het gevoel van controle, eigenwaarde en dus geluk.</p>
+<p>Door verschillende datasets te combineren en gerichte visualisaties te ontwikkelen, willen we een helder beeld geven van hoe sociaal beleid en maatschappelijke structuren samenhangen met welzijn. Deze data story laat zien dat geluk niet enkel een individuele aangelegenheid is, maar onderdeel is van de samenleving als geheel.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="datasets-en-preprocessing">
+<h2>Datasets en Preprocessing<a class="headerlink" href="#datasets-en-preprocessing" title="Link to this heading">#</a></h2>
+<section id="centril-happiness-score">
+<h3>Centril happiness score<a class="headerlink" href="#centril-happiness-score" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_mental_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;alcohol vs happiness/data/clean_mental.csv&#39;</span><span class="p">)</span>
+<span class="n">df_mental_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df_mental_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;alcohol vs happiness/data/clean_mental.csv&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df_mental_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;alcohol vs happiness/data/clean_mental.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mental-health-mental-disorder-dataset">
+<h3>Mental Health (Mental disorder dataset)<a class="headerlink" href="#mental-health-mental-disorder-dataset" title="Link to this heading">#</a></h3>
+<section id="herkomtst-dataset">
+<h4>Herkomtst dataset<a class="headerlink" href="#herkomtst-dataset" title="Link to this heading">#</a></h4>
+<p>De dataset is afkomstig van Kaggle (<a class="reference external" href="https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data">https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data</a>). De maker van de dataset heeft de data opgebouwd door survey data, ook wel enquetes. Volgens deze maker kunnen mentale aandoeningen ook gemeten worden door het bevragen van de testgroep naar symptomen. Deze vragen lijken dan sterk op de vragen die ze gebruiken om diagnoses mee te stellen. Het voordeel hiervan is dat je geen data vanuit gezondheidsspecialisten hoeft op te vragen.</p>
+</section>
+<section id="gebruikte-variabelen">
+<h4>Gebruikte variabelen<a class="headerlink" href="#gebruikte-variabelen" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>‘Entity’ (Land waar de data vandaan komt)</p></li>
+<li><p>‘Year’ (Jaar waarin de data opgenomen is)</p></li>
+<li><p>‘Depressive_disorders’ (Depressieve stoornissen percentage van de bevolking)</p></li>
+<li><p>‘Anxiety_disorders’ (Angst stoornissen percentage van de bevolking)</p></li>
+<li><p>‘Eating_disorders’ (Eet stoornissen percentage van de bevolking)</p></li>
+</ol>
+</section>
+<section id="opgschonen-dataset">
+<h4>Opgschonen dataset<a class="headerlink" href="#opgschonen-dataset" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>De ‘Code’ variabele is verwijderd omdat deze niet gebruikt wordt/overbodig is vanwege ‘Entity’.</p></li>
+</ol>
+</section>
+<section id="datasets-samenvoegen">
+<h4>Datasets samenvoegen<a class="headerlink" href="#datasets-samenvoegen" title="Link to this heading">#</a></h4>
+<p>Deze dataset is gemerged met de Alcohol per persoon dataset en er is gekozen voor de ‘inner’ merge wat betekent dat datapunten gelijke waarden moeten hebben voor variabelen ‘Entity’ en ‘Year’. Hierdoor blijven alleen gemeenschappelijke datapunten over en kunnen deze gebruikt worden voor analyse.</p>
+</section>
+<section id="dataset-head">
+<h4>Dataset head<a class="headerlink" href="#dataset-head" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_mental_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;alcohol vs happiness/data/clean_mental.csv&#39;</span><span class="p">)</span>
+<span class="n">df_mental_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entity</th>
+      <th>Year</th>
+      <th>Schizophrenia_disorders</th>
+      <th>Depressive_disorders</th>
+      <th>Anxiety_disorders</th>
+      <th>Bipolar_disorders</th>
+      <th>Eating_disorders</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>1990</td>
+      <td>0.223206</td>
+      <td>4.996118</td>
+      <td>4.713314</td>
+      <td>0.703023</td>
+      <td>0.127700</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>1991</td>
+      <td>0.222454</td>
+      <td>4.989290</td>
+      <td>4.702100</td>
+      <td>0.702069</td>
+      <td>0.123256</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>1992</td>
+      <td>0.221751</td>
+      <td>4.981346</td>
+      <td>4.683743</td>
+      <td>0.700792</td>
+      <td>0.118844</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>1993</td>
+      <td>0.220987</td>
+      <td>4.976958</td>
+      <td>4.673549</td>
+      <td>0.700087</td>
+      <td>0.115089</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>1994</td>
+      <td>0.220183</td>
+      <td>4.977782</td>
+      <td>4.670810</td>
+      <td>0.699898</td>
+      <td>0.111815</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="alcohol-consumptie-per-persoon">
+<h3>Alcohol consumptie per persoon<a class="headerlink" href="#alcohol-consumptie-per-persoon" title="Link to this heading">#</a></h3>
+<section id="herkomst-dataset">
+<h4>Herkomst dataset<a class="headerlink" href="#herkomst-dataset" title="Link to this heading">#</a></h4>
+<p>Deze dataset in afkomstig van OurWorldinData (<a class="reference external" href="https://ourworldindata.org/grapher/total-alcohol-consumption-per-capita-litres-of-pure-alcohol">https://ourworldindata.org/grapher/total-alcohol-consumption-per-capita-litres-of-pure-alcohol</a>). De gegevens zijn gebaseerd op een geschatte hoeveelheid alcohol in pure liters bloed per persoon van 15 jaar of ouder, per jaar.</p>
+</section>
+<section id="gebruikte-variabalen">
+<h4>Gebruikte variabalen<a class="headerlink" href="#gebruikte-variabalen" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>‘Entity’ (Land van gemiddeld persoon dat alcohol drinkt)</p></li>
+<li><p>‘Year’ (Jaar waarin de hoeveelheid alcohol gdronken werd)</p></li>
+<li><p>‘Total alcohol consumption per capita (liters of pure alcohol, projected estimates, 15+ years of age)’ (Dit is de volledige variabele. Gegeven in pure liters alcohol per persoon per jaar)</p></li>
+</ol>
+</section>
+<section id="opschonen-dataset">
+<h4>Opschonen dataset<a class="headerlink" href="#opschonen-dataset" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Voor deze dataset is alleen de variabele ‘Code’ verwijdert omdat deze overbodig is.</p></li>
+<li><p>Verder is de variabaele ‘Total alcohol consumption per capita (liters of pure alcohol, projected estimates, 15+ years of age)’ handmatig verandert naar ‘Alcohol_consumption’.</p></li>
+</ol>
+</section>
+<section id="id1">
+<h4>Datasets samenvoegen<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_alcohol_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;alcohol vs happiness/data/clean_alcohol.csv&#39;</span><span class="p">)</span>
+<span class="n">df_alcohol_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entity</th>
+      <th>Year</th>
+      <th>Alcohol_consumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>2000</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>2001</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>2002</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>2003</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>2004</td>
+      <td>0.021</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+</section>
+<section id="perspectieven-en-argumenten">
+<h2>Perspectieven en Argumenten<a class="headerlink" href="#perspectieven-en-argumenten" title="Link to this heading">#</a></h2>
+<section id="perpectief-1">
+<h3>Perpectief 1<a class="headerlink" href="#perpectief-1" title="Link to this heading">#</a></h3>
+<p>Econonische factoren zoals sociale vangnetten en inkomensgelijkheid hebben invloed op de mentale gesteldheid van een land.</p>
+<section id="argument-1">
+<h4>Argument 1<a class="headerlink" href="#argument-1" title="Link to this heading">#</a></h4>
+<p>Hoe beter het vangnet, hoe meer geluk.</p>
+</section>
+<section id="argument-2">
+<h4>Argument 2<a class="headerlink" href="#argument-2" title="Link to this heading">#</a></h4>
+<p>Hoe meer economische gelijkheid, hoe meer geluk.</p>
+</section>
+</section>
+<section id="perspectief-2">
+<h3>Perspectief 2<a class="headerlink" href="#perspectief-2" title="Link to this heading">#</a></h3>
+<p>Culturele factoren zoals politieke betrokkenheid van de bevolking en alcohol gebruik hebben invloed op de mentale gesteldheid van een land.</p>
+<section id="id2">
+<h4>Argument 1<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p>Hoe meer de bevolking betrokken is bij de politiek, hoe meer geluk.</p>
+</section>
+<section id="id3">
+<h4>Argument 2<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p>Hoe meer de bevolking drinkt, hoe meer geluk.</p>
+<section id="mentale-stoornissen-en-alcohol">
+<h5>Mentale stoornissen en Alcohol<a class="headerlink" href="#mentale-stoornissen-en-alcohol" title="Link to this heading">#</a></h5>
+<p>Matig alcoholgebruik en psychologisch welzijn
+Een invloedrijke reviewstudie van Baum-Baicker (1985) concludeert dat matig alcoholgebruik kan bijdragen aan positieve psychologische uitkomsten. In tegenstelling tot zwaar drinken of volledige abstinentie, blijkt gematigde alcoholconsumptie samen te hangen met:</p>
+<ul class="simple">
+<li><p>verminderde stress, zowel op fysiologisch niveau als volgens zelfrapportages;</p></li>
+<li><p>meer gevoelens van blijdschap, ontspanning, euforie, en een afname van negatieve gevoelens zoals schaamte en spanning;</p></li>
+<li><p>lagere incidentie van depressieve symptomen, in vergelijking met zowel geheelonthouders als zware drinkers.</p></li>
+</ul>
+<p>Volgens Baum-Baicker kunnen deze effecten deels worden verklaard doordat matig alcoholgebruik de psychologische beleving van sociale situaties versterkt en fungeert als een vorm van affectregulatie. Hoewel dit uiteraard niet geldt voor iedereen, en context en persoonlijkheid een rol spelen, geeft dit onderzoek aanleiding om matig gebruik niet uitsluitend negatief te beoordelen.</p>
+<p>Baum-Baicker, C. (1985). The psychological benefits of moderate alcohol consumption: A review of the literature. Drug and Alcohol Dependence, 15(4), 305–322. <a class="reference external" href="https://doi.org/10.1016/0376-8716(85)90013-7">https://doi.org/10.1016/0376-8716(85)90013-7</a></p>
+<details>
+  <summary><strong>Bekijk de code</strong></summary>
+  <pre><code>
+# Dataset laden
+df = pd.read_csv("alcohol vs happiness/data/merged_all.csv")
+
+mental_vars = [
+    "Schizophrenia_disorders",
+    "Depressive_disorders",
+    "Anxiety_disorders",
+    "Bipolar_disorders",
+    "Eating_disorders"
+]
+mental_labels = [
+    "Schizofrenie stoornissen",
+    "Depressie stoornissen",
+    "Angst stoornissen",
+    "Bipolaire stoornissen",
+    "Eet stoornissen"
+]
+colors = ["#636EFA", "#EF553B", "#00CC96", "#AB63FA", "#FFA15A"]
+
+# Selecteer relevante kolommen en verwijder rijen met missende waarden
+df_clean = df[["Entity", "Year", "Alcohol_consumption"] + mental_vars].dropna()
+
+fig = go.Figure()
+buttons = []
+
+for i, var in enumerate(mental_vars):
+    x = df_clean["Alcohol_consumption"]
+    y = df_clean[var]
+    country = df_clean["Entity"]
+    year = df_clean["Year"]
+
+    # Pearson correlatie
+    corr, _ = stats.pearsonr(x, y)
+    corr_text = f"<b>{var}</b><br>Pearson r = {corr:.2f}"
+
+    # Regressielijn
+    slope, intercept, _, _, std_err = stats.linregress(x, y)
+    reg_x = np.linspace(x.min(), x.max(), 100)
+    reg_y = slope * reg_x + intercept
+    y_err = std_err * 1.96
+    upper = reg_y + y_err
+    lower = reg_y - y_err
+    rgba = f'rgba{tuple(int(colors[i].lstrip("#")[j:j+2], 16) for j in (0, 2, 4)) + (0.2,)}'
+
+    # Punten met hoverinfo
+    fig.add_trace(go.Scatter(
+        x=x, y=y, mode="markers",
+        marker=dict(size=4, color=colors[i]),
+        name=var,
+        visible=(i == 0),
+        text=[f"{c}, {y}" for c, y in zip(country, year)],
+        hovertemplate="<b>%{text}</b><br>Alcohol: %{x}<br>Prevalentie: %{y}<extra></extra>"
+    ))
+
+    # CI bovenlijn
+    fig.add_trace(go.Scatter(
+        x=reg_x, y=upper, mode="lines",
+        line=dict(width=0), hoverinfo="skip",
+        visible=(i == 0), showlegend=False
+    ))
+
+    # CI onderlijn met fill
+    fig.add_trace(go.Scatter(
+        x=reg_x, y=lower, mode="lines",
+        fill="tonexty", fillcolor=rgba,
+        line=dict(width=0), hoverinfo="skip",
+        visible=(i == 0), showlegend=False
+    ))
+
+    # Regressielijn
+    fig.add_trace(go.Scatter(
+        x=reg_x, y=reg_y, mode="lines",
+        line=dict(color="black", width=3),
+        name=f"{var} regressielijn",
+        visible=(i == 0)
+    ))
+
+    # Visibility logica
+    vis = [False] * (4 * len(mental_vars))
+    for j in range(4):
+        vis[i * 4 + j] = True
+
+    # Annotations vervangen per selectie
+    buttons.append(dict(
+        label=var,
+        method="update",
+        args=[
+            {"visible": vis},
+            {
+                "title": f"Alcoholgebruik vs {mental_labels[i]}",
+                "annotations": [dict(
+                    x=1.03, y=0.8,
+                    xref="paper", yref="paper",
+                    text=corr_text,
+                    showarrow=False,
+                    align="left",
+                    font=dict(size=13),
+                    xanchor="left"
+                )]
+            }
+        ]
+    ))
+
+# Begin-annotatie (eerste variabele)
+initial_corr, _ = stats.pearsonr(df_clean["Alcohol_consumption"], df_clean[mental_vars[0]])
+initial_text = f"<b>{mental_labels[0]}</b><br>Pearson r = {initial_corr:.2f}"
+
+fig.update_layout(
+    title=f"Alcoholgebruik vs {mental_labels[0]}",  
+    xaxis_title="Alcoholgebruik (liters per capita)",
+    yaxis_title="Prevalentie (%)",
+    updatemenus=[dict(
+        buttons=buttons,
+        direction="down",
+        showactive=True,
+        x=1.03, y=0.6,
+        xanchor="left", yanchor="top"
+    )],
+    annotations=[dict(
+        x=1.03, y=0.8,
+        xref="paper", yref="paper",
+        text=initial_text,
+        showarrow=False,
+        align="left",
+        font=dict(size=13),
+        xanchor="left"
+    )],
+    height=500,
+    margin=dict(t=80, r=160, b=60, l=60)  # extra ruimte rechts voor tekst
+)
+
+fig.show()
+
+fig.write_html("docs/scatter1.html", include_plotlyjs="cdn")
+  </code></pre>
+</details>
+<ul class="simple">
+<li><p>Klik hier voor de scatterplot:📈 <a class="reference internal" href="#scatter1.html"><span class="xref myst">Scatterplot: Alcoholgebruik vs Mentale stoornissen</span></a></p></li>
+</ul>
+<p>In deze scatterplot zijn meerdere variabelen aan te klikken. Alle variabelen zijn stoornissen die voorkomen als percentage waarin het voorkomt in de populatie van een land. Alcoholgebruik wordt aangeven in pure alcohol liters per persoon.</p>
+</section>
+<section id="geluk-en-alcohol">
+<h5>Geluk en alcohol<a class="headerlink" href="#geluk-en-alcohol" title="Link to this heading">#</a></h5>
+<p>Alcohol: stimulans voor geluk en sociale verbondenheid
+Onderzoek van de Universiteit van Oxford suggereert dat matig alcoholgebruik, wanneer het plaatsvindt in een sociale context zoals een lokale kroeg, positieve effecten kan hebben op welzijn en geluk. Uit het onderzoek blijkt dat mensen die regelmatig een “vaste” ontmoetingsplek bezoeken:</p>
+<p>“tend to feel more socially engaged and contented, and are more likely to trust other members of their community” (Dunbar, 2016, p. 2).</p>
+<p>Het drinken van alcohol in deze setting activeert het endorfinesysteem in de hersenen, wat sociale verbinding bevordert – vergelijkbaar met activiteiten zoals zingen of dansen. Dit leidt tot:</p>
+<ul class="simple">
+<li><p>Grotere sociale verbondenheid, doordat mensen hun netwerk uitbreiden en zich onderdeel voelen van een groep;</p></li>
+<li><p>Meer levensvoldoening, doordat sociale interactie bijdraagt aan zingeving;</p></li>
+<li><p>Toegenomen vertrouwen, wat beschermend werkt tegen psychische klachten.</p></li>
+</ul>
+<p>Hoewel overmatig drinken schadelijk blijft, laat deze studie zien dat matig alcoholgebruik in sociale omgevingen gepaard kan gaan met positieve mentale gezondheidseffecten, mits het gebeurt op een verantwoorde en regelmatige manier.</p>
+<p>Dunbar, R. (2016). Friends on tap: The role of pubs at the heart of community. Oxford: University of Oxford. Retrieved from <a class="reference external" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4F630690EBEF6A97349AE5771FC0A703">https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4F630690EBEF6A97349AE5771FC0A703</a></p>
+<details>
+<summary><strong>Bekijk de code</strong></summary>
+<pre><code>
+# Opschonen
+df_clean = df[["Entity", "Year", "Alcohol_consumption", "Cantril ladder score"]].dropna()
+
+x = df_clean["Alcohol_consumption"]
+y = df_clean["Cantril ladder score"]
+country = df_clean["Entity"]
+year = df_clean["Year"]
+
+# Regressie en CI
+slope, intercept, _, _, std_err = stats.linregress(x, y)
+reg_x = np.linspace(x.min(), x.max(), 100)
+reg_y = slope * reg_x + intercept
+y_err = std_err * 1.96
+upper = reg_y + y_err
+lower = reg_y - y_err
+
+# Correlatie berekenen
+corr, _ = stats.pearsonr(x, y)
+corr_text = f"<b>Cantril ladder score</b><br>Pearson r = {corr:.2f}"
+
+# Plot bouwen
+fig = go.Figure()
+
+# Punten
+fig.add_trace(go.Scatter(
+    x=x, y=y, mode="markers",
+    marker=dict(size=4, color="#00CC96"),
+    name="Cantril ladder score",
+    text=[f"{c}, {y}" for c, y in zip(country, year)],
+    hovertemplate="<b>%{text}</b><br>Alcohol: %{x}<br>Score: %{y}<extra></extra>"
+))
+
+# Bovenlijn CI
+fig.add_trace(go.Scatter(
+    x=reg_x, y=upper, mode="lines",
+    line=dict(width=0), hoverinfo="skip", showlegend=False
+))
+
+# Onderlijn CI met fill
+fig.add_trace(go.Scatter(
+    x=reg_x, y=lower, mode="lines",
+    fill="tonexty", fillcolor='rgba(0, 0, 0, 0.2)',
+    line=dict(width=0), hoverinfo="skip", showlegend=False
+))
+
+# Regressielijn (zwart)
+fig.add_trace(go.Scatter(
+    x=reg_x, y=reg_y, mode="lines",
+    line=dict(color="black", width=3),
+    name="Regressielijn"
+))
+
+# Layout & annotatie
+fig.update_layout(
+    title="Alcoholgebruik vs Cantril ladder score",
+    xaxis_title="Alcoholgebruik (liters per capita)",
+    yaxis_title="Centril ladder score (1-10)",
+    annotations=[dict(
+        x=1.03, y=0.8,
+        xref="paper", yref="paper",
+        text=corr_text,
+        showarrow=False,
+        align="left",
+        font=dict(size=13),
+        xanchor="left"
+    )],
+    height=500,
+    margin=dict(t=80, r=160, b=60, l=60)
+)
+
+fig.show()
+
+fig.write_html("docs/scatter2.html", include_plotlyjs="cdn")
+</code></pre>
+</details><ul class="simple">
+<li><p>Klik hier voor de scatterplot:📊 <a class="reference internal" href="#scatter2.html"><span class="xref myst">Scatterplot: Alcoholgebruik vs Centril ladder score</span></a></p></li>
+</ul>
+<p>De Centril ladder score is een geluksscore die aangeeft hoe gelukkig de populatie is. Hoe hoger, hoe gelukkiger. Alcoholgebruik wordt aangeven in pure alcohol liters per persoon.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="samenvatting-optioneel">
+<h2>Samenvatting (optioneel)<a class="headerlink" href="#samenvatting-optioneel" title="Link to this heading">#</a></h2>
+<p>samenvatting van het onderzoek</p>
+</section>
+<section id="verwerkte-feedback">
+<h2>Verwerkte Feedback<a class="headerlink" href="#verwerkte-feedback" title="Link to this heading">#</a></h2>
+</section>
+<section id="werk-verdeling">
+<h2>Werk Verdeling<a class="headerlink" href="#werk-verdeling" title="Link to this heading">#</a></h2>
+</section>
+<section id="perspectief-1-inkomensongelijkheid">
+<h2>Perspectief 1: Inkomensongelijkheid<a class="headerlink" href="#perspectief-1-inkomensongelijkheid" title="Link to this heading">#</a></h2>
+<p>Grote verschillen tussen top en basis versterken statusangst, wantrouwen en het gevoel er niet bij te horen.<br />
+Die psychosociale stressoren werken als stille sluipers:<br />
+ze verhogen chronische ontevredenheid en dragen bij aan depressieve gevoelens los van absolute armoede.</p>
+<section id="gebruikte-datasets">
+<h3>Gebruikte datasets<a class="headerlink" href="#gebruikte-datasets" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>CPDS (Comparative Political Data Set)</strong><br />
+Bron: University of Bern<br />
+Relevante variabelen: de Gini-coëfficiënt per land/jaar (een maat voor inkomensongelijkheid).</p></li>
+<li><p><strong>Burden of Disease – Depressive Disorders (DALY)</strong><br />
+Bron: OurWorldInData<br />
+Relevante variabelen: Depressieve stoornissen, gemeten in DALYs per 100.000 inwoners (age-standardized, both sexes)</p></li>
+<li><p><strong>Happiness (Cantril Ladder Score)</strong><br />
+Bron: OurWorldInData<br />
+Relevante variabelen: Zelfgerapporteerd geluk (score van 0–10) per land/jaar.</p></li>
+</ul>
+</section>
+</section>
+<section id="preprocessing-stappen">
+<h2>Preprocessing stappen<a class="headerlink" href="#preprocessing-stappen" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Relevante kolommen geselecteerd uit elk bestand</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gini</span></code> (inkomensongelijkheid)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">depression_rate</span></code> (depressieve stoornissen als % van de bevolking)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ladder_score</span></code> (zelfgerapporteerd geluk)</p></li>
+</ul>
+</li>
+<li><p>Datasets samengevoegd op basis van land en jaar (<code class="docutils literal notranslate"><span class="pre">country</span></code>, <code class="docutils literal notranslate"><span class="pre">year</span></code>)</p></li>
+<li><p>ontbrekende waarden verwijderd</p></li>
+<li><p>Per land het gemiddelde genomen van alle beschikbare jaren. Dit zorgt voor 1 datapunt per land met gemiddelde Gini, depressie en geluk</p></li>
+<li><p>Gini-coëfficiënt opgedeeld in 3 groepen (laag / midden / hoog) op basis van kwantielen (gebruikt om groepsverschillen in depressie en geluk visueel weer te geven)</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dataset inladen</span>
+<span class="n">gini_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;Jan_Notebook/db/cpds-1960-2022-update-2024-2.xlsx&quot;</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s2">&quot;DATA&quot;</span><span class="p">)[[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;postfisc_gini&#39;</span><span class="p">]]</span>
+<span class="n">gini_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;gini&#39;</span><span class="p">]</span>
+
+<span class="n">happiness_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Jan_Notebook/db/happiness-cantril-ladder.csv&quot;</span><span class="p">)[[</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Cantril ladder score&#39;</span><span class="p">]]</span>
+<span class="n">happiness_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;ladder_score&#39;</span><span class="p">]</span>
+
+<span class="n">burden_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Jan_Notebook/db/2- burden-disease-from-each-mental-illness(1).csv&quot;</span><span class="p">)[[</span>
+    <span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;DALYs (rate) - Sex: Both - Age: Age-standardized - Cause: Depressive disorders&#39;</span>
+<span class="p">]]</span>
+<span class="n">burden_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;depression_daly&#39;</span><span class="p">]</span>
+
+<span class="c1"># Merge datasets</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">gini_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">happiness_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">burden_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Gemiddelde per land</span>
+<span class="n">mean_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Categoriseer ongelijkheid</span>
+<span class="n">quantiles</span> <span class="o">=</span> <span class="n">mean_df</span><span class="p">[</span><span class="s1">&#39;gini&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">([</span><span class="mf">0.33</span><span class="p">,</span> <span class="mf">0.66</span><span class="p">])</span>
+<span class="n">mean_df</span><span class="p">[</span><span class="s1">&#39;gini_group&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span>
+    <span class="n">mean_df</span><span class="p">[</span><span class="s1">&#39;gini&#39;</span><span class="p">],</span>
+    <span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">),</span> <span class="n">quantiles</span><span class="p">[</span><span class="mf">0.33</span><span class="p">],</span> <span class="n">quantiles</span><span class="p">[</span><span class="mf">0.66</span><span class="p">],</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)],</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Low inequality&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;High inequality&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+
+
+<span class="n">mean_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>year</th>
+      <th>gini</th>
+      <th>ladder_score</th>
+      <th>depression_daly</th>
+      <th>gini_group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Australia</td>
+      <td>2016.00</td>
+      <td>31.5000</td>
+      <td>7.265333</td>
+      <td>813.999533</td>
+      <td>High inequality</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Austria</td>
+      <td>2015.25</td>
+      <td>27.8625</td>
+      <td>7.200025</td>
+      <td>520.676389</td>
+      <td>Low inequality</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Belgium</td>
+      <td>2015.25</td>
+      <td>25.8750</td>
+      <td>6.943812</td>
+      <td>624.431468</td>
+      <td>Low inequality</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Canada</td>
+      <td>2015.25</td>
+      <td>31.2875</td>
+      <td>7.370138</td>
+      <td>545.253928</td>
+      <td>High inequality</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Denmark</td>
+      <td>2017.00</td>
+      <td>28.0000</td>
+      <td>7.569720</td>
+      <td>596.333348</td>
+      <td>Low inequality</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">correlaties</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="s1">&#39;depression_daly&#39;</span><span class="p">,</span> <span class="s1">&#39;ladder_score&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;pearson&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">correlaties</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                     gini  depression_daly  ladder_score
+gini             1.000000         0.303216     -0.178575
+depression_daly  0.303216         1.000000      0.385452
+ladder_score    -0.178575         0.385452      1.000000
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Figuur 1.1: Correlaties tussen ongelijkheid, depressie en geluk</strong></p>
+<p>Deze tabel toont de Pearson-correlaties tussen de Gini-coëfficiënt (inkomensongelijkheid), depressie (DALY) en geluk (Cantril ladder score). We zien dat inkomensongelijkheid positief samenhangt met depressie (r = 0.30) en negatief met geluk (r = –0.18).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde depressie per ongelijkheidsgroep</span>
+<span class="n">depr_per_group</span> <span class="o">=</span> <span class="n">mean_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;gini_group&#39;</span><span class="p">)[</span><span class="s1">&#39;depression_daly&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="c1"># Laagste en hoogste gemiddelde</span>
+<span class="n">laagste</span> <span class="o">=</span> <span class="n">depr_per_group</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">hoogste</span> <span class="o">=</span> <span class="n">depr_per_group</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Laagste gemiddelde: </span><span class="si">{</span><span class="n">laagste</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Hoogste gemiddelde: </span><span class="si">{</span><span class="n">hoogste</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Laagste gemiddelde: 552.24, Hoogste gemiddelde: 686.27
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_267026/1730292026.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  depr_per_group = mean_df.groupby(&#39;gini_group&#39;)[&#39;depression_daly&#39;].mean()
+</pre></div>
+</div>
+</div>
+</div>
+<p>Deze code berekent het gemiddelde niveau van depressie (uitgedrukt in DALY per 100.000 inwoners) voor drie groepen landen, ingedeeld op basis van inkomensongelijkheid (laag, gemiddeld en hoog, volgens de Gini-coëfficiënt). Vervolgens worden de laagste en hoogste groepsgemiddelden weergegeven, om inzicht te geven in de verschillen tussen samenlevingen met weinig en veel ongelijkheid.</p>
+<section id="argument-1-ongelijkheid-vergroot-status-stress-en-sociale-vergelijking">
+<h3>Argument 1: Ongelijkheid vergroot status, stress en sociale vergelijking.<a class="headerlink" href="#argument-1-ongelijkheid-vergroot-status-stress-en-sociale-vergelijking" title="Link to this heading">#</a></h3>
+<p>In ongelijke samenlevingen vergelijken mensen zich vaker met rijkere groepen.<br />
+Dit leidt tot gevoelens van tekortschieten, falen en sociale uitsluiting.<br />
+De ‘status anxiety’-theorie (Wilkinson &amp; Pickett) stelt dat zulke samenlevingen meer mentale druk ervaren.</p>
+<p><em>Onderbouwing:</em></p>
+<ul class="simple">
+<li><p>Gini-coëfficiënt ↔ depressie_daly: r = 0.303216</p></li>
+<li><p>Landen met hoge ongelijkheid rapporteren gemiddeld meer depressie
+(<em>laag: 552.24, hoog: 686.27</em>)</p></li>
+</ul>
+</section>
+<section id="argument-2-gedeelde-middelen-nemen-af-waardoor-sociale-samenhang-verzwakt">
+<h3>Argument 2: Gedeelde middelen nemen af, waardoor sociale samenhang verzwakt<a class="headerlink" href="#argument-2-gedeelde-middelen-nemen-af-waardoor-sociale-samenhang-verzwakt" title="Link to this heading">#</a></h3>
+<p>Als inkomensverschillen toenemen, vermindert het vertrouwen in de samenleving.<br />
+Mensen investeren minder in publieke goederen, wat leidt tot vervreemding en eenzaamheid.</p>
+<p><em>Onderbouwing:</em></p>
+<ul class="simple">
+<li><p>Gini ↔ geluk (Cantril ladder score): r = –0.178575</p></li>
+<li><p>Landen met hoge ongelijkheid zijn gemiddeld minder gelukkig (<em>laag: 6.41, hoog: 6.85</em>)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde geluksscore per ongelijkheidsgroep</span>
+<span class="n">geluk_per_group</span> <span class="o">=</span> <span class="n">mean_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;gini_group&#39;</span><span class="p">)[</span><span class="s1">&#39;ladder_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">laagste_geluk</span> <span class="o">=</span> <span class="n">geluk_per_group</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">hoogste_geluk</span> <span class="o">=</span> <span class="n">geluk_per_group</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Laagste gelukscore: </span><span class="si">{</span><span class="n">laagste_geluk</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Hoogste gelukscore: </span><span class="si">{</span><span class="n">hoogste_geluk</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Laagste gelukscore: 6.41, Hoogste gelukscore: 6.85
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_267026/3106146447.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  geluk_per_group = mean_df.groupby(&#39;gini_group&#39;)[&#39;ladder_score&#39;].mean()
+</pre></div>
+</div>
+</div>
+</div>
+<p>Deze code berekent de gemiddelde Cantril ladder-scores per inkomensongelijkheidsgroep. Landen met gemiddelde ongelijkheid scoren het hoogst op geluk (6.85), terwijl landen met hoge of lage ongelijkheid lagere scores laten zien (laagste: 6.41).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddeldes per groep</span>
+<span class="n">group_means</span> <span class="o">=</span> <span class="n">mean_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;gini_group&#39;</span><span class="p">)[[</span><span class="s1">&#39;ladder_score&#39;</span><span class="p">,</span> <span class="s1">&#39;depression_daly&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Omzetten naar lange vorm</span>
+<span class="n">melted</span> <span class="o">=</span> <span class="n">group_means</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s1">&#39;gini_group&#39;</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Indicator&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Gemiddelde waarde&#39;</span><span class="p">)</span>
+
+<span class="c1"># Labels aanpassen voor duidelijkheid</span>
+<span class="n">indicator_labels</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;ladder_score&#39;</span><span class="p">:</span> <span class="s1">&#39;Geluksscore (Cantril ladder)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;depression_daly&#39;</span><span class="p">:</span> <span class="s1">&#39;Depressie (DALY per 100.000)&#39;</span>
+<span class="p">}</span>
+<span class="n">melted</span><span class="p">[</span><span class="s1">&#39;Indicator&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">melted</span><span class="p">[</span><span class="s1">&#39;Indicator&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">indicator_labels</span><span class="p">)</span>
+
+<span class="c1"># Facet barplots</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">melted</span><span class="p">,</span>
+    <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;gini_group&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Gemiddelde waarde&#39;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s1">&#39;Indicator&#39;</span><span class="p">,</span>
+    <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">,</span>
+    <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Mentale gezondheid per ongelijkheidsgroep&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{col_name}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_axis_labels</span><span class="p">(</span><span class="s1">&#39;Ongelijkheidsgroep&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">():</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_267026/182604837.py:2: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  group_means = mean_df.groupby(&#39;gini_group&#39;)[[&#39;ladder_score&#39;, &#39;depression_daly&#39;]].mean().reset_index()
+/tmp/ipykernel_267026/182604837.py:15: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  g = sns.catplot(
+</pre></div>
+</div>
+<img alt="_images/92547b820b443f6257fdd96c56b0ab6bf1b420d438505700cfdf8a3b711a59f6.png" src="_images/92547b820b443f6257fdd96c56b0ab6bf1b420d438505700cfdf8a3b711a59f6.png" />
+</div>
+</div>
+<p><strong>Figuur 1.2 : Mentale gezondheid per ongelijkheidsgroep</strong></p>
+<p>Deze visualisatie toont het verband tussen inkomensongelijkheid en mentaal welzijn, uitgesplitst per ongelijkheidsgroep op basis van de Gini-coëfficiënt (laag, gemiddeld, hoog). De linker grafiek toont de gemiddelde geluksscore (Cantril ladder; schaal 0–10), terwijl de rechter grafiek het gemiddelde aantal ziektelastjaren (DALY’s) door depressieve stoornissen per 100.000 inwoners weergeeft. De x-as toont de mate van ongelijkheid, en de y-assen geven respectievelijk het geluksniveau en het aantal DALY’s aan. De grafiek laat zien dat landen met hogere ongelijkheid gemiddeld minder gelukkig zijn en meer depressielast kennen. Dit ondersteunt de hypothese dat ongelijkheid negatieve psychologische effecten heeft via verhoogde stress en sociale uitsluiting.</p>
+</section>
+</section>
+<section id="conclusie">
+<h2>Conclusie<a class="headerlink" href="#conclusie" title="Link to this heading">#</a></h2>
+<p>De visualisaties in dit perspectief tonen hoe inkomensongelijkheid samenhangt met slechter mentaal welzijn. In landen met een hoge Gini-coëfficiënt komt depressie vaker voor en scoren mensen gemiddeld lager op de Cantril ladder van ervaren geluk. Dit ondersteunt twee centrale mechanismen: ten eerste vergroot ongelijkheid de statusstress en sociale vergelijking, wat leidt tot mentale druk. Ten tweede ondermijnt ongelijkheid de sociale cohesie en het vertrouwen in anderen, wat het algemeen welzijn verlaagt.
+De data tonen dat ongelijkheid het psychologisch en sociaal functioneren van samenlevingen aanzienlijk beïnvloedt.</p>
+</section>
+<section id="perspectief-2-politiek">
+<h2>Perspectief 2: politiek<a class="headerlink" href="#perspectief-2-politiek" title="Link to this heading">#</a></h2>
+<p>Dit perspectief vertrekt vanuit het idee dat intense politieke betrokkenheid mogelijk samenhangt met een lager niveau van geluk binnen een samenleving. Het onderliggende argument is dat in samenlevingen waar politiek een dominante rol speelt in het dagelijks leven van burgers, dit gepaard kan gaan met gevoelens van stress, verdeeldheid of machteloosheid. Politiek wordt dan niet gezien als iets verbindends, maar als een bron van conflict, frustratie of onzekerheid.</p>
+<p>Het uitgangspunt van deze analyse is dus:<br />
+<strong>Hoe belangrijker mensen politiek vinden in hun leven, hoe lager gemiddeld hun ervaren geluk.</strong></p>
+</section>
+<section id="id4">
+<h2>Gebruikte datasets<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="world-values-survey-2022">
+<h3>1. <strong>World Values Survey (2022)</strong><a class="headerlink" href="#world-values-survey-2022" title="Link to this heading">#</a></h3>
+<p><strong>Variabele:</strong> <em>Very important in life: Politics</em></p>
+<p>Deze dataset komt van een wereldwijd surveyproject dat meet hoe belangrijk mensen verschillende levensaspecten vinden, waaronder politiek. De specifieke variabele die wij gebruiken toont per land welk percentage van de bevolking politiek bijvoorbeeld als <strong>“zeer belangrijk”</strong> beschouwt in hun leven. Deze maat laat indirect zien in hoeverre mensen politiek als bepalend of ingrijpend ervaren binnen hun samenleving.</p>
+<blockquote>
+<div><p><strong>Doel in deze analyse:</strong><br />
+Helpt inschatten hoe politiek “aanwezig” of “dominant” is in het leven van mensen per land.</p>
+</div></blockquote>
+</section>
+<section id="gallup-world-poll-our-world-in-data-2022">
+<h3>2. <strong>Gallup World Poll / Our World in Data (2022)</strong><a class="headerlink" href="#gallup-world-poll-our-world-in-data-2022" title="Link to this heading">#</a></h3>
+<p><strong>Variabele:</strong> <em>Cantril ladder score</em></p>
+<p>De Cantril-ladder is een bekende methode om geluk of levensvoldoening te meten. Mensen wordt gevraagd hun leven voor te stellen als een ladder van 0 (slechtst mogelijke leven) tot 10 (best mogelijke leven), en aan te geven op welke trede ze zichzelf op dit moment plaatsen. Dit levert een gemiddelde geluksscore per land op.</p>
+<blockquote>
+<div><p><strong>Doel in deze analyse:</strong><br />
+Maakt het mogelijk om per land te bepalen hoe gelukkig mensen zich voelen, en dat te koppelen aan politieke betrokkenheid.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">pearsonr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="onderzoeksvraag-en-doel">
+<h2>Onderzoeksvraag en Doel<a class="headerlink" href="#onderzoeksvraag-en-doel" title="Link to this heading">#</a></h2>
+<p>In dit project wordt onderzocht of er een relatie bestaat tussen politieke betrokkenheid en het geluksniveau in verschillende landen.</p>
+<p>De centrale hypothese luidt:</p>
+<p><strong>Hoe belangrijker mensen politiek vinden in hun dagelijks leven, hoe ongelukkiger ze zich gemiddeld voelen.</strong></p>
+<p>Om deze hypothese te toetsen, zijn twee datasets gebruikt:</p>
+<ul class="simple">
+<li><p><strong>Dataset 1:</strong> <em>how-important-politics-is-in-your-life.csv</em><br />
+Bevat per land het percentage mensen dat politiek als “zeer belangrijk” aanduidt in hun leven.</p></li>
+<li><p><strong>Dataset 2:</strong> <em>happiness-cantril-ladder.csv</em><br />
+Bevat per land de gemiddelde geluksscore, gemeten via de Cantril-ladder (schaal van 0 tot 10).</p></li>
+</ul>
+<p>Het doel van dit onderzoek is om deze twee datasets te koppelen, te analyseren en visueel weer te geven, om inzicht te krijgen in de mogelijke samenhang tussen politieke betrokkenheid en ervaren geluk op internationaal niveau.</p>
+</section>
+<section id="stap-1-inladen-van-de-dataset-over-politiek-belang">
+<h2>Stap 1: Inladen van de dataset over politiek belang<a class="headerlink" href="#stap-1-inladen-van-de-dataset-over-politiek-belang" title="Link to this heading">#</a></h2>
+<p>We beginnen dit project door de dataset te laden die meet hoe belangrijk mensen politiek vinden in hun leven.<br />
+Omdat we deze data willen vergelijken met geluksscores uit hetzelfde jaar, filteren we de dataset op <strong>alleen het jaar 2022</strong>.<br />
+Op deze manier zorgen we voor een eerlijke, tijdsgebonden vergelijking tussen landen.</p>
+<p>Uit de dataset behouden we enkel de kolom die het percentage weergeeft van mensen die politiek als <strong>“zeer belangrijk”</strong> beschouwen.<br />
+Deze kolom wordt hernoemd naar <code class="docutils literal notranslate"><span class="pre">&quot;Very</span> <span class="pre">Important</span> <span class="pre">%&quot;</span></code> om de interpretatie te vergemakkelijken en de leesbaarheid van latere analyses te verbeteren.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pad naar politieke dataset</span>
+<span class="n">politiek_path</span> <span class="o">=</span> <span class="s2">&quot;data/how-important-politics-is-in-your-life.csv&quot;</span>
+<span class="n">df_pol</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">politiek_path</span><span class="p">)</span>
+
+<span class="c1"># Filter op jaar 2022</span>
+<span class="n">df_pol_2022</span> <span class="o">=</span> <span class="n">df_pol</span><span class="p">[</span><span class="n">df_pol</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Pak alleen het percentage mensen dat politiek &quot;zeer belangrijk&quot; vindt</span>
+<span class="n">df_very</span> <span class="o">=</span> <span class="n">df_pol_2022</span><span class="p">[[</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span> <span class="s2">&quot;Very important in life: Politics&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Hernoem kolom voor duidelijkheid</span>
+<span class="n">df_very</span> <span class="o">=</span> <span class="n">df_very</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Very important in life: Politics&quot;</span><span class="p">:</span> <span class="s2">&quot;Very Important %&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Pad naar politieke dataset</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">politiek_path</span> <span class="o">=</span> <span class="s2">&quot;data/how-important-politics-is-in-your-life.csv&quot;</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">df_pol</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">politiek_path</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Filter op jaar 2022</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">df_pol_2022</span> <span class="o">=</span> <span class="n">df_pol</span><span class="p">[</span><span class="n">df_pol</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="nn">File /workspaces/Group29/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>   <span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File /workspaces/Group29/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File /workspaces/Group29/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File /workspaces/Group29/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File /workspaces/Group29/.venv/lib/python3.12/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;data/how-important-politics-is-in-your-life.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="resultaat">
+<h3>Resultaat<a class="headerlink" href="#resultaat" title="Link to this heading">#</a></h3>
+<p>Een dataframe met landen en het percentage mensen dat politiek als “zeer belangrijk” beschouwt in het jaar 2022.</p>
+</section>
+</section>
+<section id="stap-2-inladen-van-de-dataset-over-geluk">
+<h2>Stap 2: Inladen van de dataset over geluk<a class="headerlink" href="#stap-2-inladen-van-de-dataset-over-geluk" title="Link to this heading">#</a></h2>
+<p>Vervolgens laden we de dataset met gemiddelde geluksscores, gemeten aan de hand van de <strong>Cantril-ladder</strong>.<br />
+Deze schaal loopt van 0 (slechtst mogelijke leven) tot 10 (best mogelijke leven), en geeft aan hoe mensen hun leven evalueren.</p>
+<p>Net als bij de politieke dataset filteren we ook hier op <strong>het jaar 2022</strong>, zodat de data vergelijkbaar blijft.<br />
+We selecteren enkel de relevante kolommen: de landnaam en de bijbehorende Cantril-score.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pad naar geluksdataset</span>
+<span class="n">geluk_path</span> <span class="o">=</span> <span class="s2">&quot;data/happiness-cantril-ladder.csv&quot;</span>
+<span class="n">df_geluk</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">geluk_path</span><span class="p">)</span>
+
+<span class="c1"># Filter op jaar 2022 en relevante kolommen</span>
+<span class="n">df_geluk_2022</span> <span class="o">=</span> <span class="n">df_geluk</span><span class="p">[</span><span class="n">df_geluk</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2022</span><span class="p">][[</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span> <span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id5">
+<h3>Resultaat<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Een dataframe met landen en hun gemiddelde geluksscore in 2022.</p>
+</section>
+</section>
+<section id="stap-3-mergen-van-beide-datasets">
+<h2>Stap 3: Mergen van beide datasets<a class="headerlink" href="#stap-3-mergen-van-beide-datasets" title="Link to this heading">#</a></h2>
+<p>We willen per land zowel het percentage mensen dat politiek als zeer belangrijk beschouwt, als de gemiddelde geluksscore kunnen vergelijken.<br />
+Daarom voegen we de twee datasets samen op basis van de kolom <strong>“Entity”</strong>, die de landnamen bevat.<br />
+Na het mergen bevat elke rij in de nieuwe dataset informatie over zowel politieke betrokkenheid als geluk voor dat land.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Merge op landnaam</span>
+<span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_very</span><span class="p">,</span> <span class="n">df_geluk_2022</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">)</span>
+
+<span class="c1"># Bekijk de eerste paar rijen</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      Entity  Very Important %  Cantril ladder score
+0    Albania          5.375286                 5.277
+1  Argentina          7.527421                 6.024
+2    Armenia         12.755730                 5.342
+3  Australia         10.337860                 7.095
+4    Austria         11.372800                 7.097
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id6">
+<h3>Resultaat<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Een gecombineerde dataset met per land:</p>
+<ul class="simple">
+<li><p><strong>Very Important %</strong> – het percentage mensen dat politiek als zeer belangrijk beschouwt</p></li>
+<li><p><strong>Cantril ladder score</strong> – de gemiddelde geluksscore van mensen in dat land</p></li>
+</ul>
+</section>
+</section>
+<section id="stap-4-correlatie-berekenen">
+<h2>Stap 4: Correlatie berekenen<a class="headerlink" href="#stap-4-correlatie-berekenen" title="Link to this heading">#</a></h2>
+<p>We willen nu onderzoeken of er een statistische relatie bestaat tussen deze twee variabelen.<br />
+Hiervoor gebruiken we de <strong>Pearson-correlatiecoëfficiënt</strong>, die meet of er een lineair verband is tussen twee variabelen en hoe sterk dat verband is.<br />
+Een negatieve waarde van r betekent dat een hoger politiek belang samenhangt met een lager geluk.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">pearsonr</span>
+
+<span class="c1"># Bepaal de correlatie</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">]</span>
+<span class="n">r</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;r = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, p = </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>r = -0.3779, p = 0.0005
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="argument-1-hoge-politieke-betrokkenheid-weerspiegelt-gevoel-van-urgentie-in-crisissamenlevingen">
+<h2>Argument 1: Hoge politieke betrokkenheid weerspiegelt gevoel van urgentie in crisissamenlevingen<a class="headerlink" href="#argument-1-hoge-politieke-betrokkenheid-weerspiegelt-gevoel-van-urgentie-in-crisissamenlevingen" title="Link to this heading">#</a></h2>
+<p>In landen waar burgers politiek als “zeer belangrijk” ervaren, speelt vaak een gevoel van urgentie of crisis. Denk aan economische instabiliteit, corruptie, conflict of polarisatie.<br />
+Mensen wenden zich in zulke contexten intensiever tot politiek: niet omdat ze zich empowered voelen, maar omdat de omstandigheden hen daartoe dwingen.<br />
+De overheid wordt dan gezien als bron van zowel hoop als frustratie. Deze verhoogde aandacht voor politiek weerspiegelt een stressvolle leefomgeving, waarin het geluksgevoel onder druk staat.</p>
+<section id="onderbouwing-uit-de-data">
+<h3>Onderbouwing uit de data<a class="headerlink" href="#onderbouwing-uit-de-data" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Negatieve correlatie</strong> tussen politiek belang en Cantril-geluksscore:<br />
+<em>r = –0.378</em>, <em>p = 0.0005</em></p></li>
+<li><p>In landen met <strong>extreem hoge politieke betrokkenheid</strong> (zoals Egypte, Ghana en Zimbabwe), liggen de geluksscores <strong>ver onder het wereldgemiddelde</strong></p></li>
+<li><p>Deze landen scoren vaak ook laag op indicatoren zoals politieke stabiliteit, persvrijheid of inkomenszekerheid<br />
+(<em>al zijn die hier niet direct gemeten, ze kunnen interessant zijn voor vervolgonderzoek</em>)</p></li>
+</ul>
+</section>
+<section id="interpretatie">
+<h3>Interpretatie<a class="headerlink" href="#interpretatie" title="Link to this heading">#</a></h3>
+<p>De burger die dagelijks met politiek bezig is, doet dat niet altijd uit vrije keuze.<br />
+In maatschappijen waar fundamentele systemen wankelen, wordt politiek onontkoombaar.<br />
+Deze constante confrontatie met politieke kwesties kan afbreuk doen aan het gevoel van autonomie, veiligheid en toekomstperspectief: allemaal belangrijke bouwstenen van welzijn en geluk.</p>
+</section>
+<section id="id7">
+<h3>Resultaat<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>r</strong> vertelt hoe sterk het verband is.<br />
+<em>r &lt; 0</em> betekent een <strong>negatief verband</strong>: hoe belangrijker mensen politiek vinden, hoe lager het geluk.</p></li>
+<li><p><strong>p</strong> vertelt of het verband <strong>statistisch significant</strong> is.<br />
+<em>p &lt; 0.05</em> betekent dat het verband <strong>waarschijnlijk niet door toeval komt</strong>.</p></li>
+</ul>
+</section>
+<section id="stap-5-visualisatie-van-de-relatie">
+<h3>Stap 5: Visualisatie van de relatie<a class="headerlink" href="#stap-5-visualisatie-van-de-relatie" title="Link to this heading">#</a></h3>
+<p>We maken een scatterplot waarin:</p>
+<ul class="simple">
+<li><p>Elk land wordt weergegeven als <strong>een punt</strong> op basis van:</p>
+<ul>
+<li><p><strong>X-as</strong>: percentage mensen dat politiek als “zeer belangrijk” ervaart</p></li>
+<li><p><strong>Y-as</strong>: gemiddelde geluksscore volgens de Cantril-ladder</p></li>
+</ul>
+</li>
+<li><p>Een <strong>regressielijn</strong> toont de algemene trend in de data</p></li>
+<li><p>Er worden <strong>annotaties toegevoegd</strong> bij landen met extreme waarden, zoals zeer hoge betrokkenheid of zeer laag geluk</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="c1"># Maak een kopie van de dataset</span>
+<span class="n">subset</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Visualisatie</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Puntenplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">subset</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+    <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Regressielijn</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">subset</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">,</span>
+    <span class="n">scatter</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
+    <span class="n">line_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;linewidth&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;linestyle&quot;</span><span class="p">:</span> <span class="s2">&quot;dashed&quot;</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="c1"># Annotaties: landen met hoogste belang en laagste geluk</span>
+<span class="n">top_label_landen</span> <span class="o">=</span> <span class="n">subset</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">top_label_landen</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
+    <span class="n">top_label_landen</span><span class="p">,</span>
+    <span class="n">subset</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">top_label_landen</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+        <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.3</span><span class="p">,</span>
+        <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span>
+        <span class="n">row</span><span class="p">[</span><span class="s2">&quot;Entity&quot;</span><span class="p">],</span>
+        <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span>
+    <span class="p">)</span>
+
+<span class="c1"># Titels + correlatie</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Relatie tussen politiek belang en geluk per land (2022)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Percentage dat politiek &#39;zeer belangrijk&#39; vindt&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Gemiddelde geluksscore (Cantril ladder)&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span>
+    <span class="sa">f</span><span class="s2">&quot;r = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="se">\n</span><span class="s2">p = </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span>
+    <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round,pad=0.3&#39;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/eefd1cdd4d1004dee58844e9afd93cca247a49ded5f663aec07ae1925a097e01.png" src="_images/eefd1cdd4d1004dee58844e9afd93cca247a49ded5f663aec07ae1925a097e01.png" />
+</div>
+</div>
+</section>
+<section id="id8">
+<h3>Conclusie<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>De visualisatie toont een duidelijke <strong>negatieve correlatie</strong>:</p>
+<p>→ Hoe belangrijker mensen politiek vinden in hun dagelijks leven,<br />
+hoe lager het gemiddelde geluksniveau in dat land.</p>
+<p>Deze observatie ondersteunt het argument dat sterke politieke betrokkenheid<br />
+niet altijd duidt op interesse of participatie uit vrijheid,<br />
+maar juist op een gevoel van maatschappelijke onrust of urgentie.<br />
+Wanneer mensen zich intensief bezighouden met politiek,<br />
+kan dit voortkomen uit zorgen, ontevredenheid of stress:
+factoren die het subjectieve welzijn verlagen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sorteer op hoogste politieke betrokkenheid</span>
+<span class="n">top_hoog</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="c1"># Sorteer op laagste politieke betrokkenheid</span>
+<span class="n">top_laag</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Very Important %&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Bereken gemiddelde geluksscore per groep</span>
+<span class="n">gem_hoog</span> <span class="o">=</span> <span class="n">top_hoog</span><span class="p">[</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">gem_laag</span> <span class="o">=</span> <span class="n">top_laag</span><span class="p">[</span><span class="s2">&quot;Cantril ladder score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; Gemiddelde geluksscore (hoogste politieke betrokkenheid): </span><span class="si">{</span><span class="n">gem_hoog</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; Gemiddelde geluksscore (laagste politieke betrokkenheid): </span><span class="si">{</span><span class="n">gem_laag</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Gemiddelde geluksscore (hoogste politieke betrokkenheid): 4.93
+ Gemiddelde geluksscore (laagste politieke betrokkenheid): 6.22
+</pre></div>
+</div>
+</div>
+</div>
+<p>Deze cijfers ondersteunen het idee dat <strong>intensieve politieke betrokkenheid geassocieerd is met een lager gemiddeld geluksgevoel</strong>:
+niet per se omdat politiek op zichzelf ongelukkig maakt,<br />
+maar omdat het belang dat eraan wordt gehecht een indicatie kan zijn van <strong>maatschappelijke spanningen</strong> of <strong>ontevredenheid</strong>.</p>
+<p>Met andere woorden: politieke betrokkenheid fungeert hier mogelijk als signaal van bredere sociale of economische problemen,<br />
+en niet als bron van welzijn.</p>
+</section>
+</section>
+<section id="perspectief-3-drugs-gebruik">
+<h2>perspectief 3: drugs gebruik<a class="headerlink" href="#perspectief-3-drugs-gebruik" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">pearsonr</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/merged_mental_alcohol.csv&#39;</span><span class="p">)</span>
+
+<span class="n">alcohol</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;alcohol_consumption&#39;</span><span class="p">]</span>
+<span class="n">depression</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Depressive_disorders&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">depression</span><span class="p">,</span>           <span class="c1"># x- en y-waarden</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>          <span class="c1"># grootte van de punten</span>
+            <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>     <span class="c1"># transparantie</span>
+            <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span> <span class="c1"># randkleur</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Total pure alcohol consumption per capita in liters&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Depression disorders (share of population)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Alcohol vs Depression&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">m</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">depression</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># slope en intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">m</span><span class="o">*</span><span class="n">alcohol</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;y=</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">x+</span><span class="si">{</span><span class="n">b</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6a838ba2a05ef7023719edd346aaee4dbb139571f1ec67ad8ddc602616965db9.png" src="_images/6a838ba2a05ef7023719edd346aaee4dbb139571f1ec67ad8ddc602616965db9.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">depression</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pearson r = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">, p-value = </span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">r_depression</span> <span class="o">=</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pearson r = -0.096, p-value = 0.000
+</pre></div>
+</div>
+</div>
+</div>
+<p>In de bovenstaande resultaten staan bevindingen van datasets over depressie stoornissen en alcohol consumptie. Hier bij zijn de depressie stoornissen weergegeven in de dataset als percentages van de bevolking die hieronder lijden. Voor de alcohol consumptie dataset geldt dat dit een gemiddeld aantal gedronken pure alcohol liters zijn per persoon in een bevolking per jaar. Voor beide datasets geldt: 1 stip is een bevolking van een land in een bepaald jaar.</p>
+<p>Met een correlatie van ongeveer -0.1 kunnen we weinig concluderen. Er is een hele kleine trend te zien die verklaart zou kunnen worden door het resultaat bij de cantril ladder score.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">anxiety</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Anxiety_disorders&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">anxiety</span><span class="p">,</span>           <span class="c1"># x- en y-waarden</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>          <span class="c1"># grootte van de punten</span>
+            <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>     <span class="c1"># transparantie</span>
+            <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span> <span class="c1"># randkleur</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Total pure alcohol consumption per capita in liters&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Anxiety disorders (share of population)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Alcohol vs Anxiety&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">m</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">anxiety</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># slope en intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">m</span><span class="o">*</span><span class="n">alcohol</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;y=</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">x+</span><span class="si">{</span><span class="n">b</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/665d2a6a4cb0187e27733c13c3337a301c3eaa43b5061dbbf2eab761ce302b3b.png" src="_images/665d2a6a4cb0187e27733c13c3337a301c3eaa43b5061dbbf2eab761ce302b3b.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">anxiety</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pearson r = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">, p-value = </span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">r_anxiety</span> <span class="o">=</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pearson r = 0.198, p-value = 0.000
+</pre></div>
+</div>
+</div>
+</div>
+<p>Een correlatie van 0.2 is niet veel, maar kan wel een kleine aanwijzing zijn.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eating</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Eating_disorders&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">eating</span><span class="p">,</span>           <span class="c1"># x- en y-waarden</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>          <span class="c1"># grootte van de punten</span>
+            <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>     <span class="c1"># transparantie</span>
+            <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span> <span class="c1"># randkleur</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Total pure alcohol consumption per capita in liters&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Eating disorders (share of population)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Alcohol vs Eating&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">m</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">eating</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># slope en intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">m</span><span class="o">*</span><span class="n">alcohol</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;y=</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">x+</span><span class="si">{</span><span class="n">b</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/bd9af0eff790876e55f5481a0ab594811de791d109e417c64805931250046e83.png" src="_images/bd9af0eff790876e55f5481a0ab594811de791d109e417c64805931250046e83.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">eating</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pearson r = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">, p-value = </span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">r_eating</span> <span class="o">=</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pearson r = 0.410, p-value = 0.000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/merged_cantril_alcohol.csv&#39;</span><span class="p">)</span>
+
+<span class="n">alcohol</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;alcohol_consumption&#39;</span><span class="p">]</span>
+<span class="n">cantril</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cantril ladder score&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">cantril</span><span class="p">,</span>           <span class="c1"># x- en y-waarden</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>          <span class="c1"># grootte van de punten</span>
+            <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>     <span class="c1"># transparantie</span>
+            <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span> <span class="c1"># randkleur</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Total pure alcohol consumption per capita in liters&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cantril ladder score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Alcohol vs Happiness&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">m</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">cantril</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># slope en intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">m</span><span class="o">*</span><span class="n">alcohol</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;y=</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">x+</span><span class="si">{</span><span class="n">b</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5b19287f111150cecd4c9f45578ac4dcd305d1651106ea8d56974b635eb49119.png" src="_images/5b19287f111150cecd4c9f45578ac4dcd305d1651106ea8d56974b635eb49119.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">pearsonr</span>
+<span class="c1">#correlation</span>
+<span class="n">r</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">alcohol</span><span class="p">,</span> <span class="n">cantril</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pearson r = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">, p-value = </span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">r_cantril</span> <span class="o">=</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pearson r = 0.392, p-value = 0.000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Depression disorders vs alcohol consumption: </span><span class="si">{</span><span class="n">r_depression</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Anxiety disorders vs alcohol consumption: </span><span class="si">{</span><span class="n">r_anxiety</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Eating disorders vs alcohol consumption: </span><span class="si">{</span><span class="n">r_eating</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Cantril ladder score (happiness score) vs alcohol consumption: </span><span class="si">{</span><span class="n">r_cantril</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Depression disorders vs alcohol consumption: -0.09639106252955282
+Anxiety disorders vs alcohol consumption: 0.19797950854164054
+Eating disorders vs alcohol consumption: 0.41010431244110523
+Cantril ladder score (happiness score) vs alcohol consumption: 0.3920530895603099
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example correlation values</span>
+<span class="n">correlations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Depression disorders&#39;</span><span class="p">:</span> <span class="n">r_depression</span><span class="p">,</span>
+    <span class="s1">&#39;Anxiety disorders&#39;</span><span class="p">:</span> <span class="n">r_anxiety</span><span class="p">,</span>
+    <span class="s1">&#39;Eating disorders&#39;</span><span class="p">:</span> <span class="n">r_eating</span><span class="p">,</span>
+    <span class="s1">&#39;Cantril ladder score&#39;</span><span class="p">:</span> <span class="n">r_cantril</span>
+<span class="p">}</span>
+
+<span class="c1"># Extract keys and values</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">correlations</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">correlations</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+<span class="c1"># Create the bar chart</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">bars</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+
+<span class="c1"># Add horizontal line at 0</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add labels and title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Correlation&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlations between alcohol use in a country and their mental state&quot;</span><span class="p">)</span>
+
+<span class="c1"># Optional: Color bars based on sign</span>
+<span class="k">for</span> <span class="n">bar</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">bars</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="n">bar</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;green&#39;</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span>
+
+<span class="c1"># Rotate x-axis labels if needed</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f1252502f488bced141e1c630c4f5c95d5225108b03a5022224ff75984ce6ad8.png" src="_images/f1252502f488bced141e1c630c4f5c95d5225108b03a5022224ff75984ce6ad8.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inleiding">Inleiding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-preprocessing">Datasets en Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centril-happiness-score">Centril happiness score</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mental-health-mental-disorder-dataset">Mental Health (Mental disorder dataset)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#herkomtst-dataset">Herkomtst dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruikte-variabelen">Gebruikte variabelen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#opgschonen-dataset">Opgschonen dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-samenvoegen">Datasets samenvoegen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-head">Dataset head</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alcohol-consumptie-per-persoon">Alcohol consumptie per persoon</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#herkomst-dataset">Herkomst dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruikte-variabalen">Gebruikte variabalen</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#opschonen-dataset">Opschonen dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Datasets samenvoegen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectieven-en-argumenten">Perspectieven en Argumenten</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perpectief-1">Perpectief 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-1">Argument 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-2">Argument 2</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-2">Perspectief 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Argument 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Argument 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mentale-stoornissen-en-alcohol">Mentale stoornissen en Alcohol</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#geluk-en-alcohol">Geluk en alcohol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#samenvatting-optioneel">Samenvatting (optioneel)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verwerkte-feedback">Verwerkte Feedback</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werk-verdeling">Werk Verdeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-1-inkomensongelijkheid">Perspectief 1: Inkomensongelijkheid</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruikte-datasets">Gebruikte datasets</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-stappen">Preprocessing stappen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-1-ongelijkheid-vergroot-status-stress-en-sociale-vergelijking">Argument 1: Ongelijkheid vergroot status, stress en sociale vergelijking.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-2-gedeelde-middelen-nemen-af-waardoor-sociale-samenhang-verzwakt">Argument 2: Gedeelde middelen nemen af, waardoor sociale samenhang verzwakt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusie">Conclusie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-2-politiek">Perspectief 2: politiek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Gebruikte datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#world-values-survey-2022">1. <strong>World Values Survey (2022)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gallup-world-poll-our-world-in-data-2022">2. <strong>Gallup World Poll / Our World in Data (2022)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#onderzoeksvraag-en-doel">Onderzoeksvraag en Doel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-1-inladen-van-de-dataset-over-politiek-belang">Stap 1: Inladen van de dataset over politiek belang</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resultaat">Resultaat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-2-inladen-van-de-dataset-over-geluk">Stap 2: Inladen van de dataset over geluk</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Resultaat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-3-mergen-van-beide-datasets">Stap 3: Mergen van beide datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Resultaat</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-4-correlatie-berekenen">Stap 4: Correlatie berekenen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argument-1-hoge-politieke-betrokkenheid-weerspiegelt-gevoel-van-urgentie-in-crisissamenlevingen">Argument 1: Hoge politieke betrokkenheid weerspiegelt gevoel van urgentie in crisissamenlevingen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onderbouwing-uit-de-data">Onderbouwing uit de data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretatie">Interpretatie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Resultaat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stap-5-visualisatie-van-de-relatie">Stap 5: Visualisatie van de relatie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Conclusie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perspectief-3-drugs-gebruik">perspectief 3: drugs gebruik</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Yen-Chia Hsu
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
