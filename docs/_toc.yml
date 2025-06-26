@@ -1,6 +1,5 @@
 format: jb-book
-root: home
+root: docs/notebook
 chapters:
-  - file: notebook
-  - file: perspectief_1
-  - file: perspectief_2
+  - file: docs/perspectief_1
+  - file: docs/perspectief_2
